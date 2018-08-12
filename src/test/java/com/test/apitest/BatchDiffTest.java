@@ -9,7 +9,7 @@ import java.util.Map;
 
 import com.github.kevinsawicki.http.HttpRequest;
 
-public class BatchApiTest {
+public class BatchDiffTest {
     @DataProvider
     public Object[][] data() {
         Object[][] diffApis = new Object[][]{
