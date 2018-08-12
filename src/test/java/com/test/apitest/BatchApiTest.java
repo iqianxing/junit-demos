@@ -49,8 +49,8 @@ public class BatchApiTest {
         String newJsonString = HttpRequest.get(newApiUrl)
                 .accept("application/json")
                 .body();
-        Map<String,Object> oldJsonVo = JSON.parseObject(oldJsonString);
-        Map<String,Object> newJsonVo = JSON.parseObject(newJsonString);
-        Assert.assertEquals(oldJsonVo,newJsonVo);
+        Object oldJsonVo = JSON.parseObject(oldJsonString);
+        Object newJsonVo = JSON.parseObject(newJsonString);
+        Assert.assertEquals(oldJsonVo, newJsonVo);
     }
 }
