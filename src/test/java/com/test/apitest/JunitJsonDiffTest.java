@@ -47,4 +47,24 @@ public  class JunitJsonDiffTest {
         Assert.assertEquals(oldJsonVo,newJsonVo);
     }
 
+    @Test
+    public  void  test_json_with_chinese(){
+        String oldJson = "{\"hello\":\"你好\",\"success\":true}";
+        String newJson = "{\"success\":true,\"hello\":\"你好吗\"}";
+
+        Map<String,Object> oldJsonVo = (Map<String,Object>)JSON.parseObject(oldJson);
+        Map<String,Object> newJsonVo = (Map<String,Object>)JSON.parseObject(newJson);
+        Assert.assertEquals(oldJsonVo,newJsonVo);
+    }
+
+    @Test
+    public  void  test_json_with_date(){
+        String oldJson = "{\"hello\":\"你好\",\"success\":true,\"birthDay\":\"1995-06-15 10:05:00\"}";
+        String newJson = "{\"hello\":\"你好\",\"success\":true,\"birthDay\":\"1995-06-15 20:05:00\"}";
+
+        Map<String,Object> oldJsonVo = (Map<String,Object>)JSON.parseObject(oldJson);
+        Map<String,Object> newJsonVo = (Map<String,Object>)JSON.parseObject(newJson);
+        Assert.assertEquals(oldJsonVo,newJsonVo);
+    }
+
 }
