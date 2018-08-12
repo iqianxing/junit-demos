@@ -8,7 +8,7 @@ import java.util.Map;
 public  class JunitJsonDiffTest {
 
     @Test
-    public  void  test_keyOrder_is_same(){
+    public  void  test_json_same_keys(){
         String oldJson = "{\"hello\":\"world\",\"success\":true}";
         String newJson = "{\"hello\":\"world\",\"success\":true}";
 
@@ -18,7 +18,7 @@ public  class JunitJsonDiffTest {
     }
 
     @Test
-    public  void  test_keyOrder_is_different(){
+    public  void  test_json_diff_keyOrders(){
         String oldJson = "{\"hello\":\"world\",\"success\":true}";
         String newJson = "{\"success\":true,\"hello\":\"world\"}";
 
@@ -28,7 +28,7 @@ public  class JunitJsonDiffTest {
     }
 
     @Test
-    public  void  test_json_differert(){
+    public  void  test_json_diff_values(){
         String oldJson = "{\"hello\":\"world\",\"success\":true}";
         String newJson = "{\"success\":true,\"hello\":\"wOrld\"}";
 
@@ -38,7 +38,7 @@ public  class JunitJsonDiffTest {
     }
 
     @Test
-    public  void  test_jsonTree_differert(){
+    public  void  test_json_diff_sub_nodes(){
         String oldJson = "{\"user\":{\"name\":\"devops\",\"age\":10},\"hello\":\"world\",\"success\":true}";
         String newJson = "{\"success\":true,\"hello\":\"wOrld\",\"user\":{\"name\":\"test\",\"age\":10}}";
 
