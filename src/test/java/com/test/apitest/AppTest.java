@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 public class AppTest 
 {
     @Test
-    public void helloWorld()
+    public void test_helloWorld()
     {
         System.out.println("hello,world");
     }

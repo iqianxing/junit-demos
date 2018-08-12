@@ -42,7 +42,7 @@ public class BatchApiTest {
     }
 
     @Test(dataProvider = "data")
-    public void test_add(String oldApiUrl, String newApiUrl) {
+    public void test_apiDiff(String oldApiUrl, String newApiUrl) {
         String oldJsonString = HttpRequest.get(oldApiUrl)
                 .accept("application/json")
                 .body();

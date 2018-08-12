@@ -8,7 +8,7 @@ import java.util.Map;
 
 public  class TestNGJsonDiffTest {
     @Test
-    public  void  fastjsonDiff(){
+    public  void  test_json_diff(){
         String oldJson = "{\"title\":\"com.tencent.news\",\"fullTitle\":\"Androbugs report com.tencent.news\",\"timedOut\":false,\"duration\":0,\"state\":\"passed\",\"speed\":\"fast\",\"pass\":true,\"fail\":false,\"pending\":false}";
         String newJson = "{\"title\":\"com.tencent.news2\",\"fullTitle\":\"Androbugs report com.tencent.news2\",\"timedOut\":false,\"duration\":0,\"state\":\"passed\",\"speed\":\"fast\",\"pass\":true,\"fail\":false,\"pending\":false}";
 
