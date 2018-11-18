@@ -3,10 +3,7 @@ package com.test.apitest;
 import com.alibaba.fastjson.JSON;
 import org.junit.*;
 
-import java.util.Map;
-
 public class JunitJsonDiffTest {
-
   @Test
   public void test_json_same_keys() {
     String oldJson = "{\"hello\":\"world\",\"success\":true}";

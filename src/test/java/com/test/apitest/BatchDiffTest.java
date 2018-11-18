@@ -5,8 +5,6 @@ import org.junit.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.Map;
-
 import com.github.kevinsawicki.http.HttpRequest;
 
 public class BatchDiffTest {
