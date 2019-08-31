@@ -20,7 +20,7 @@ public class TriangleTest {
 
   @Test
   public void test_valid_triangle() {
-    boolean isValid = Triangle.isValidTriangle(2, 19, 5);
+    boolean isValid = Triangle.isValidTriangle(20, 19, 30);
     Assert.assertEquals(isValid, true);
   }
 }
