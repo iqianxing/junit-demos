@@ -3,7 +3,7 @@ package com.test.apitest;
 import org.junit.*;
 
 /**
- * Unit test for simple App.
+ * Unit test for Triangle.
  */
 public class TriangleTest {
   @Test
